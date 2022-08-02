@@ -44,6 +44,7 @@ function App() {
       fontFamily: 'arial',
       color: 'white',
       background: 'inherit',
+      cursor: 'pointer',
     }}>
       {data.map((el) => (
         <div
