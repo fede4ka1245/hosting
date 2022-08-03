@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './app.css';
 
 function App() {
@@ -33,8 +33,12 @@ function App() {
     window.Telegram?.WebApp?.sendData(JSON.stringify({
       value
     }))
-    window.Telegram?.WebApp?.close()
+    window.Telegram?.WebApp?.close();
   }
+
+  useEffect(() => {
+    window.Telegram?.WebApp?.expand();
+  }, [])
 
   return (
     <div style={{
