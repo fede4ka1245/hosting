@@ -1,0 +1,12 @@
+.deals {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.deal {
+    width: calc(50% - 8px);
+    height: auto;
+    display: inline-block;
+    margin: 4px;
+}
